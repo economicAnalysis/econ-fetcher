@@ -35,4 +35,4 @@ ADD     . /src
 EXPOSE 22
 
 # Set the default command to run when starting the container
-CMD ["/usr/bin/supervisord"]
+CMD     ["/usr/bin/supervisord"]
