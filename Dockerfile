@@ -22,9 +22,6 @@ RUN     mkdir -p /var/log/supervisor
 RUN     mkdir /root/.ssh/
 
 # Dump the environmental variables
-RUN     mkdir -p /var/log/dump
-RUN     echo '---dump---' >> /var/log/dump/envdump
-RUN     env | grep _PORT >> /var/log/dump/envdump
 
 
 # ADD <src> <dest>. <src> must be the path to a file or directory relative to the source directory being built
