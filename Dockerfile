@@ -5,11 +5,10 @@
 #
 
 # Pull base image.
-FROM    ubuntu:14.04
+FROM    ubuntu:13.04
 
 # Install Python.
 # RUN     sudo apt-get update 
-RUN     sudo apt-get install -y build-essential
 # RUN     sudo apt-get install -y python 
 # RUN     sudo apt-get install -y python-dev 
 # RUN     sudo apt-get install -y python-pip 
