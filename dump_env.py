@@ -7,7 +7,7 @@ def dump_env():
        void
   """
 
-  f = open('envdump.txt', 'w')
+  f = open('/src/envdump.txt', 'w')
   port = os.environ.get('MONGODB_PORT')
   port_27017 = os.environ.get('MONGODB_PORT_27017_TCP')
   address = os.environ.get('MONGODB_PORT_27017_TCP_ADDR')
