@@ -6,7 +6,10 @@ import json
 from pymongo import MongoClient
 import time
 
-client = MongoClient('localhost', process.env.MONGODB_PORT_27017_TCP)
+address = os.environ.get('MONGODB_PORT_27017_TCP_ADDR')
+port = os.environ.get('MONGODB_PORT_27017_TCP_PORT')
+
+client = MongoClient(address, port)
 
 ###what we'll do is calculate all the lists and dictionaries once
 ###and then pass them to the relevant fucntions   
