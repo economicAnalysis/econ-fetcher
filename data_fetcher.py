@@ -8,7 +8,7 @@ import time
 import os
 
 address = os.environ.get('MONGODB_PORT_27017_TCP_ADDR')
-port = os.environ.get('MONGODB_PORT_27017_TCP_PORT')
+port = int(os.environ.get('MONGODB_PORT_27017_TCP_PORT'))
 
 client = MongoClient(address, port)
 
