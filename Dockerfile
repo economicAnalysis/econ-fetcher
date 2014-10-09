@@ -31,6 +31,9 @@ ADD     ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Load and install the app
 ADD     . /src
+RUN     easy_install fred
+RUN     easy_install pymongo
+
 
 EXPOSE 22
 
