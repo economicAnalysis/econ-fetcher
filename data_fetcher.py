@@ -5,6 +5,7 @@ import pprint
 import json
 from pymongo import MongoClient
 import time
+import os
 
 address = os.environ.get('MONGODB_PORT_27017_TCP_ADDR')
 port = os.environ.get('MONGODB_PORT_27017_TCP_PORT')
