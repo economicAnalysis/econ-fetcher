@@ -10,10 +10,8 @@ FROM    ubuntu:14.04
 # Install Python.
 RUN     sudo apt-get update 
 RUN     sudo apt-get install -y python 
-RUN     sudo apt-get install -y python-dev 
-RUN     sudo apt-get install -y python-pip 
-RUN     sudo apt-get install -y python-virtualenv 
-RUN     sudo rm -rf /var/lib/apt/lists/*
+RUN     apt-get install -y python-setuptools
+
 
 # Install SSH daemon and set up supervisor
 RUN     apt-get install -y openssh-server supervisor
